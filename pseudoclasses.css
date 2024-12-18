@@ -1,0 +1,102 @@
+.a{
+    width: 3000px;
+    height:400px
+}
+input:hover{
+    background-color: red;
+    color: black;
+}
+p::first-letter{
+    color:red;
+    font-size: larger;
+}
+p::after{
+    color:red;
+    content: "krishna";
+}
+p::first-line{
+    color:green
+}
+a:link:hover{
+    color:red
+}
+input:focus{
+    background-color: green;
+}
+input:read-write{
+    background-color: yellow;
+    color:red
+}
+p::selection{
+    background-color: black;
+}
+p:target{
+    background-color: yellow;
+}
+input:required{
+    color:orange;
+}
+input:optional{
+    color:green;
+}
+input:read-only{
+    background-color: black;
+}
+input:invalid{
+    background-color: aquamarine;
+
+}
+input:valid{
+    background-color:red;
+
+}
+button:disabled{
+    background-color: blue;
+}
+input:checked + label{
+    background-color: red;
+}
+#range:in-range{
+    background-color: aliceblue;
+}
+#range:out-of-range{
+    background-color: yellowgreen;
+}
+input:enabled{
+    background-color: brown;
+}
+p:empty{
+    background-color: red;
+    height: 63px;
+}
+p:not(.d,.b){
+    background-color: black;
+}
+p:first-child{
+    background-color: red;
+}
+p:last-child{
+    background-color: green;
+}
+p:nth-child(4){
+background-color: orange;
+}
+p:nth-last-child(1){
+    background-color: blueviolet;
+}
+li:first-of-type{
+    color:red;
+}
+li:nth-of-type(2){
+    color:palevioletred;
+}
+li:last-of-type{
+    color:olivedrab;
+}
+li:only-child{
+    color: greenyellow;
+}
+li:only-of-type{
+    background-color: aqua;
+}
+

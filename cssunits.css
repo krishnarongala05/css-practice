@@ -1,0 +1,57 @@
+/* 
+1.px  (Absolute size)
+2.%   (Related to parent width/height)
+3.vw/vh  (Related to screen size)
+4.rem  (Related to root element font) (1rem=16px)->default  root element
+5.em   (Related to its font size)
+ */
+ html{
+    font-size: 20px;
+ }
+.parent{
+    background-color: red;
+    
+ 
+}
+.c1{
+    width: 10rem;
+    height: 25vh;
+    background-color: aquamarine;
+    text-align: center;
+   
+    border: 10px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+ }
+ .c2{
+    
+    font-size: 50%;
+    width: 20em;
+    height:20em ;
+
+ }
+#a{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border: 10px dotted ;
+    padding-left: 50px;
+    padding-top: 70px;
+    margin: 10px;
+    box-sizing:border-box;
+    box-shadow: 10px -10px 10px 20px;
+
+
+ }
+ #b{
+    width: 200px;
+    height: 200px;
+    background-color:red;
+    border: 10px dotted ;
+    box-sizing: initial;
+
+ }

@@ -1,0 +1,32 @@
+.full{
+    height: 500px;
+    width: 500px;
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+.half{
+    width: 100px;
+    height: 100px;
+}
+#a{
+    background-color: red;
+    flex-grow: 2;
+    flex-shrink:8;
+
+}
+#b{
+    background-color: yellow;
+    flex-grow: 2;
+    flex-shrink: 8;
+    
+}
+#c{
+    background-color: green;
+    flex-grow: 2;
+}
+
+ 
