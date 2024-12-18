@@ -1,0 +1,31 @@
+h1[title="para"]{
+    background-color: red;
+    border-radius: 20px;
+}
+/* value after matched and after it have small gap then its work*/
+p[krish~="para"]{
+    background-color: yellow;
+    border-radius: 20px;
+}
+/* value to be  matched in exactly  first only */
+p[r^="para"]{
+    background-color: black;
+}
+/* values to be  matched exactly matched or hiphen after any text also its works */
+p[a|="para"]{
+    color: red;
+}
+/* ends with this value then only its works */
+p[b$="para"]{
+    color: blueviolet;
+}
+/* values should be everywhere its works */
+p[c*="para"]{
+    color: brown;
+}
+input[type="email"]{
+    background-color: aquamarine;
+}
+input:valid{
+    background-color: red;
+}
