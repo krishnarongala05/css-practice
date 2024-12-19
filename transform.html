@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+        #a{
+            background-color: red;
+        }
+        #b{
+            background-color: aqua;
+        }
+        #a:hover{
+            transform: translate(10%,50%);
+            margin-bottom: 50px;
+            transition:3s;
+        }
+        #b:hover{
+            transform: perspective(200px) rotate(45deg);
+            transition:3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="one" id="a">
+
+    </div>
+    <div class="one" id="b">
+
+    </div>
+</body>
+</html>
+
+<!-- transform:translate(Xaxis,Yaxis)
+transform:translateX(Xaxis)
+transform:translateX(Yaxis)
+transform:rotate(50deg)
+transform:scale(3)  time increase width and height
+transform:scaleX(3)  only width increase
+transform:scaleY(3)  only height increase
+transform: skew(20deg,39deg); -->
+
+
+
