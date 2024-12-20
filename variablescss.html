@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables in css</title>
+    <style>
+        :root{
+            --c:rgb(11,22,255);
+            --a:300px;
+            --b:300px;
+            --m:200px;
+    
+        }
+        .parent{
+            height:100vh;
+            width: 100vw;
+            background-color: black;
+        }
+        .a{
+            background-color:var(--c);
+            width: var(--a);
+            height: var(--b);
+        }
+        #a{
+            position:absolute;
+            background-color: red;
+            margin-left: var(--m);
+            margin-top: var(--m);
+        }
+        @media  (min-width:900px),(max-width:500px){
+            .parent{
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="a" id="a"></div>
+        <div class="a" id="b"></div>
+
+    </div>
+</body>
+</html>
