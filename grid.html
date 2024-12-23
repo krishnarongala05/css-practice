@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        
+        .parent{
+            display:grid;
+            height:100vh;
+            width:100vw;
+            background-color: black;
+            grid-template-columns:150px 300px 150px 150PX ;
+            grid-template-rows:repeat(5,80px);
+           grid-gap:5px;
+           /* grid-template-areas: "header header header"
+                                "navbar content aside"
+                                "navbar content aside"
+                                "navbar content aside"
+                                "footer footer footer"; */
+justify-content:flex-end ;
+align-content:flex-end ;
+           
+         
+           
+           
+           
+        }
+            
+        
+        .parent>div:nth-child(even){
+            background-color: red;
+        }
+        .parent>div:nth-child(odd){
+            background-color:green;
+        }
+        /* /* .header{
+            grid-area:header;
+        }
+        .footer{
+            grid-area:footer;
+        }
+        .aside{
+            grid-area: aside;
+        }
+        .navbar{
+            grid-area:navbar;
+        }
+        .content{
+            grid-area: content;
+        } */
+        .header{
+           grid-column:1/4;
+            
+        }
+        .navbar{
+            grid-column:1/2;
+            grid-row:2/5
+}
+.content{
+    grid-column:2/3;
+    grid-row:2/5;
+}
+.aside{
+    grid-row:2/5;
+}
+        .footer{
+            grid-column:1/4
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">header</div>
+        <div class="navbar">navbar</div>
+        <div class="content">content</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+       
+        
+    </div>
+</body>
+</html>
+<!-- this properties were used in parent div
+
+grid-template-columns:100px 100px , repeat(2,100px)   no.of columns and column size  
+grid-template-rows:100px 100px     no.of rows and rows size
+grid-gap:20px                      gap between all rows and columns of every element
+grid-row-gap:20px                  gap between row items
+grid-column-gap:10px                gap between column items
+align-items:start,end,center;       items set in column 
+justify-items:start,end,center;     item set in row 
+/* grid-template-areas: "header header header"
+                        "navbar content aside"
+                        "navbar content aside"
+                        "navbar content aside"
+                        "footer footer footer"; -->
+
+<!-- this properties were used in child div
+ 
+align-self:start,end,center;     
+justify-self:start,end,center; 
+grid-row:1/2 start/end instead of this to take this also:  grid-row-start:1    grid-row-end:2
+grid-column:1/5 start/end     grid-column-start:1      grid-column-end:5
+grid-area:class name
+
+
+-->
